@@ -33,9 +33,9 @@ const getExpandDate = (date) => {
 
 const server = http.createServer((request, response) => {
 
-  response.setHeader('Access-Control-Allow-Origin', '*');
+    response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Request-Method', '*');
-    response.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+    response.setHeader('Access-Control-Allow-Methods', '*');
     response.setHeader('Access-Control-Allow-Headers', '*');
   if ( request.method === 'OPTIONS' ) {
     
