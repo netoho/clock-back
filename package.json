@@ -1,0 +1,21 @@
+{
+  "name": "clock-back",
+  "version": "1.0.0",
+  "description": "the backend for the clock",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Neto",
+  "license": "ISC",
+  "dependencies": {
+    "fortune": "^5.0.2",
+    "fortune-http": "^1.0.3",
+    "fortune-json-api": "^2.1.0",
+    "fortune-mongodb": "^1.1.4",
+    "moment": "^2.17.1",
+    "nodemon": "^1.11.0",
+    "socket.io": "^1.7.2"
+  }
+}
