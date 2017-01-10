@@ -35,8 +35,8 @@ const server = http.createServer((request, response) => {
 
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Request-Method', '*');
-    response.setHeader('Access-Control-Allow-Methods', '*');
-    response.setHeader('Access-Control-Allow-Headers', '*');
+    response.setHeader('Access-Control-Allow-Methods', 'GET, PATCH, POST,HEAD, OPTIONS,PUT, DELETE');
+    response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   if ( request.method === 'OPTIONS' ) {
     
     response.writeHead(200);
